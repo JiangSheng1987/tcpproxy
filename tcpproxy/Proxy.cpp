@@ -14,8 +14,8 @@ Proxy::Proxy(
     int listenPort,
     const std::string forwardHostname,
     int forwardPort,
-    std::function<void(const char*, int)> beforeSendToServer /* = nullptr */,
-    std::function<void(const char*, int)> beforeSendToClient /* = nullptr */) :
+    std::function<void(char*, int)> beforeSendToServer /* = nullptr */,
+    std::function<void(char*, int)> beforeSendToClient /* = nullptr */) :
 
     m_listenPort(listenPort),
     m_forwardHostname(forwardHostname),

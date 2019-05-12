@@ -11,7 +11,7 @@ class Socket;
 class Client
 {
 public:
-	Socket* ConnectToServer(const std::string& hostname, int port);
+    Socket* ConnectToServer(const std::string& hostname, int port);
 };
 
 } // namespace tcpproxy

@@ -12,14 +12,14 @@ class Socket;
 class Server
 {
 public:
-	Server(std::function<void(Socket*)> connectionHandler);
+    Server(std::function<void(Socket*)> connectionHandler);
 
-	void Listen(int port);
+    void Listen(int port);
 
 private:
-	int CreateAndBindServerSocket(int port);
+    int CreateAndBindServerSocket(int port);
 
-	std::function<void(Socket*)> m_connectionHandler;
+    std::function<void(Socket*)> m_connectionHandler;
 };
 
 } // namespace tcpproxy

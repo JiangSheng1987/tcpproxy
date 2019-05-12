@@ -6,7 +6,7 @@
 
 using namespace tcpproxy;
 
-void PrintBuffer(const char* buf, int len);
+void PrintBuffer(char* buf, int len);
 
 int main(int argc, char** argv)
 {
@@ -39,7 +39,7 @@ int main(int argc, char** argv)
     }
 }
 
-void PrintBuffer(const char* buf, int len)
+void PrintBuffer(char* buf, int len)
 {
     for (int i = 0; i < len; ++i)
     {
